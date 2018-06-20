@@ -1,7 +1,7 @@
 // thread example
 #include <iostream>       // std::cout
 #include <thread>         // std::thread
- 
+#include<pthread.h>
 void foo() 
 {
   // do stuff...
@@ -12,18 +12,32 @@ void bar(int x)
   // do stuff...
 }
 
+
+
+void* run(void* a){
+  std::cout<<"this is new pthread"<<std::endl;
+  return 0;
+}
+
 int main() 
 {
-  std::thread first (foo);     // spawn new thread that calls foo()
-  std::thread second (bar,0);  // spawn new thread that calls bar(0)
-
-  std::cout << "main, foo and bar now execute concurrently...\n";
-
-  // synchronize threads:
-  first.join();                // pauses until first finishes
-  second.join();               // pauses until second finishes
-
-  std::cout << "foo and bar completed.\n";
-
+  //std::thread first (foo);     // spawn new thread that calls foo()
+  //std::thread second (bar,0);  // spawn new thread that calls bar(0)
+//
+  //std::cout << "main, foo and bar now execute concurrently...\n";
+//
+  //// synchronize threads:
+  //first.join();                // pauses until first finishes
+  //second.join();               // pauses until second finishes
+//
+  //std::cout << "foo and bar completed.\n";
+  pthread_t t_thread;
+  if(pthread_create(&t_thread,0,&run,0)){
+    std::cout<<"something went wrong"<<std::endl;
+  }
+  if(pthread_join(t_thread,0)){
+    
+  }
+  //std::cout << "foo and bar completed.\n";
   return 0;
 }
