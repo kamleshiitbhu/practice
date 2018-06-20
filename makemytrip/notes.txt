@@ -1,0 +1,59 @@
+Q.1: how to make class immutable?
+        1.create all variable final and private.
+        2.create deep copy af all variable;
+        3.only getter for access variable.
+
+Q.2: find lowest common ancestor in tree?
+
+Q.3: longest palindrome ?
+
+Q.4: check mirror image in n-ary tree ?
+    https://www.geeksforgeeks.org/check-mirror-n-ary-tree/
+
+Q.5: check diameter of tree with dfs ?
+    https://www.geeksforgeeks.org/diameter-tree-using-dfs/
+
+Q.6: LRU cache
+    https://www.geeksforgeeks.org/lru-cache-implementation/
+
+Q.7: Boggle problem ?
+    https://www.geeksforgeeks.org/boggle-set-2-using-trie/
+
+Q.8:  find if one tree is a subtree of other ?
+
+Q.9: What is diamond problem? How do you deal with it (both in c++ and java)? Then he discussed about multiple inheritance in c+ and java.
+
+Q.10: question on OOPs?(like: ambiguity)
+
+Q.11: Interview experience
+    https://www.geeksforgeeks.org/makemytrip-interview-experience-set-13-on-campus-for-full-time/
+
+Q.12: Given two words and a dictionary, find the minimum number of changes to be made to the first word so as to form the second word,
+    if you are only allowed to make one change at a time. For example: Word1 = CAT Word 2 = FAR. Words in the dictionary are = { ACT, CAN, CAR, FAT, FAN, FAR }.
+
+Q.13: Search for a given element x in a sorted and rotated array.
+    https://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/
+
+Q.14: Find the median of three sorted arrays, later extended to k sorted arrays ?
+
+Q.15: The Two Water Jug Puzzle?
+    https://www.geeksforgeeks.org/two-water-jug-puzzle/
+
+Q.16: smallest palindrome?
+    https://www.geeksforgeeks.org/given-a-number-find-next-smallest-palindrome-larger-than-this-number/
+
+
+Q.17: inverse of number?
+    inverse of it such that (number * inverse)modulo 10^9+7=1
+
+Q.18: https://sbjoshi.wordpress.com/2008/06/04/puzzle-burning-ropes/
+
+Q.19: Find the next palindromic number greater than the current number.
+
+Q.20: KMP algorithms?
+
+Q.21: https://www.geeksforgeeks.org/find-given-string-can-represented-substring-iterating-substring-n-times/ ? (google question)
+
+Q.22: iterative tree traversal(pre,post,in and level order) ?
+Q.23: detect loop in list and remove it?
+Q.24: Red-black and AVL tree?
